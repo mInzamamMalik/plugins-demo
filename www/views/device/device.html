@@ -1,0 +1,18 @@
+<ion-view view-title="$cordovaDevice">
+  <ion-content>
+
+    <ion-list>
+      <ion-item
+        ng-repeat="(key, value) in device">
+        {{key}} : {{ value  }}
+        <div ng-if="$last"> <br /> this is last</div>
+      </ion-item>
+      <ion-item>cordova : {{cordova }}</ion-item>
+      <ion-item>model   : {{model   }}</ion-item>
+      <ion-item>platform: {{platform}}</ion-item>
+      <ion-item>uuid    : {{uuid    }}</ion-item>
+      <ion-item>version : {{version }}</ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
