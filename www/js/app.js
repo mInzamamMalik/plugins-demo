@@ -38,4 +38,9 @@ angular.module('starter', ['ionic','ngCordova'])
         templateUrl: "views/flashlight/flashlight.html",
         controller: "flashlightController"
       })
+      .state("geolocation", {
+        url: "/geolocation",
+        templateUrl: "views/geolocation/geolocation.html",
+        controller: "geolocationController"
+      })
   })
